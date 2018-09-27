@@ -1,2 +1,4 @@
 # sd-demo
-Spring Data JDBC 
+
+Example project using the newly released Spring Data JDBC. 
+
