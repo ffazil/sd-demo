@@ -13,17 +13,17 @@ import java.time.LocalDate;
 public class Customer {
     @Id
     private Long id;
-    private String firstName;
+    private String name;
     private LocalDate dob;
 
-    public Customer(String firstName, LocalDate dob){
+    public Customer(String name, LocalDate dob){
         this.id = null;
-        this.firstName = firstName;
+        this.name = name;
         this.dob = dob;
     }
 
-    public Customer firstName(String firstName){
-        this.firstName = firstName;
+    public Customer name(String name){
+        this.name = name;
 
         return this;
     }

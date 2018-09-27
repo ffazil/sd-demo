@@ -29,7 +29,7 @@ public class CustomerRepositoryTest {
 
         assertThat(saved.getId()).isNotNull();
 
-        saved.firstName("Nithin");
+        saved.name("Nithin");
 
         customerRepository.save(saved);
 
@@ -37,7 +37,7 @@ public class CustomerRepositoryTest {
 
         assertThat(reloaded).isNotEmpty();
 
-        assertThat(reloaded.get().getFirstName()).isEqualTo("Nithin");
+        assertThat(reloaded.get().getName()).isEqualTo("Nithin");
     }
 
     @Test
